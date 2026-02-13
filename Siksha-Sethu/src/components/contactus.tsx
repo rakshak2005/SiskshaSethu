@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-[#f7f9ff] to-[#eef3ff] py-24">
+    <section className="min-h-screen  from-[#f7f9ff] to-[#eef3ff] py-24">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}

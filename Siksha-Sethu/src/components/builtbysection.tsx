@@ -4,7 +4,7 @@ import varsha from '../assets/varsha.jpeg'
 
 function BuiltBySection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-[#f7f9ff] to-[#eef3ff]">
+    <section className="py-24  from-[#f7f9ff] to-[#eef3ff]">
       <div className="max-w-6xl mx-auto px-6 text-center">
 
         {/* Heading */}

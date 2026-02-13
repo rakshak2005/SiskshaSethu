@@ -1,4 +1,4 @@
-import React from "react";
+
 import scholar from "../assets/scholarship.png";
 import interbship from "../assets/internship.png";
 import grants from "../assets/grants.png";
@@ -30,7 +30,7 @@ const ExploreOpportunities = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
+    <section className="relative py-24  from-white to-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         {/* Section Header */}
