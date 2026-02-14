@@ -1,9 +1,8 @@
 function Contact() {
   return (
-    <section className="min-h-screen  from-[#f7f9ff] to-[#eef3ff] py-24">
+    <section className="min-h-screen from-[#f7f9ff] to-[#eef3ff] py-24">
       <div className="max-w-6xl mx-auto px-6">
 
-        {/* Heading */}
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Get in Touch
@@ -14,10 +13,8 @@ function Contact() {
           </p>
         </div>
 
-        {/* Content Grid */}
         <div className="mt-16 grid md:grid-cols-2 gap-12 items-start">
 
-          {/* Contact Info */}
           <div>
             <h2 className="text-2xl font-semibold text-gray-900">
               Contact Information
@@ -48,7 +45,6 @@ function Contact() {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="bg-white rounded-3xl shadow-lg p-8 border border-gray-100">
             <form className="space-y-6">
 
@@ -79,7 +75,6 @@ function Contact() {
                   Message
                 </label>
                 <textarea
-                  
                   placeholder="Write your message..."
                   className="mt-2 w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 ></textarea>
@@ -97,11 +92,7 @@ function Contact() {
 
         </div>
       </div>
-
-      
     </section>
-
-    
   );
 }
 

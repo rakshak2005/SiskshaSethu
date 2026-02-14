@@ -1,8 +1,7 @@
-
 import scholar from "../assets/scholarship.png";
 import interbship from "../assets/internship.png";
 import grants from "../assets/grants.png";
-import botIcon from "../assets/botimage.png"; // Ensure you have your bot asset here
+import botIcon from "../assets/botimage.png";
 
 const ExploreOpportunities = () => {
   const cards = [
@@ -30,18 +29,16 @@ const ExploreOpportunities = () => {
   ];
 
   return (
-    <section className="relative py-24  from-white to-slate-50 overflow-hidden">
+    <section className="relative py-24 from-white to-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
-        {/* Section Header */}
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text  text-zinc-700">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-zinc-700">
             Explore Opportunities
           </h2>
           <div className="mt-4 h-1.5 w-24 bg-gradient-to-r from-[#33ccff] to-[#4ade80] rounded-full"></div>
         </div>
 
-        {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
           {cards.map((card, index) => (
             <div
@@ -69,7 +66,7 @@ const ExploreOpportunities = () => {
 
               <button
                 className={`w-full py-4 rounded-2xl text-white font-semibold text-lg shadow-lg 
-                           transition-all duration-300 active:scale-95 ${card.accent}`}
+                            transition-all duration-300 active:scale-95 ${card.accent}`}
               >
                 {card.button}
               </button>
@@ -77,13 +74,10 @@ const ExploreOpportunities = () => {
           ))}
         </div>
 
-        {/* --- AI Chatbot Assistance Section --- */}
         <div className="relative bg-white rounded-[2.5rem] p-8 md:p-12 border border-slate-100 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden">
-          {/* Subtle background wave/gradient for that "patchy-fix" look */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-transparent pointer-events-none" />
           
           <div className="flex flex-col md:flex-row items-center gap-10 relative z-10">
-            {/* Robot Image with soft floating animation */}
             <div className="w-32 h-32 md:w-44 md:h-44 shrink-0 animate-float">
               <img 
                 src={botIcon} 
@@ -109,7 +103,6 @@ const ExploreOpportunities = () => {
         </div>
       </div>
 
-      {/* Embedded CSS for the floating effect */}
       <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
