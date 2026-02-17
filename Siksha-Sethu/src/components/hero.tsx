@@ -1,7 +1,11 @@
 import heroimg from "../assets/heroimg.png";
 import heromobile from "../assets/heromobile.png";
+import { useNavigate } from "react-router-dom";
 
 function HERO() {
+
+  const navigate = useNavigate();
+
   return (
     <section className="relative pt-44 pb-20 md:pt-36 overflow-hidden bg-gradient-to-br from-[#f7f9ff] to-[#eef3ff] min-h-screen flex flex-col justify-center">
 
@@ -43,7 +47,10 @@ function HERO() {
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
 
-            <button className="w-full sm:w-auto px-7 py-4 md:py-3 rounded-2xl bg-blue-600 text-white font-semibold shadow-xl hover:scale-105 transition duration-300">
+            <button
+              onClick={() => navigate("/opportunities")}
+              className="w-full sm:w-auto px-7 py-4 md:py-3 rounded-2xl bg-blue-600 text-white font-semibold shadow-xl hover:scale-105 transition duration-300"
+            >
               Browse Opportunities
             </button>
 
